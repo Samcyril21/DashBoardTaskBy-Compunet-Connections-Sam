@@ -1,0 +1,144 @@
+#form {
+  border: 2px solid purple;
+  border-radius: 1rem;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+#formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#homepageheading {
+  text-align: center;
+  color: purple;
+}
+
+#nav {
+  background-color: gray;
+  height: 5rem;
+  margin: 0 1rem 0 1rem;
+  padding: 1rem 5rem 1rem 5rem;
+  border-radius: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: whitesmoke;
+  cursor: pointer;
+}
+#nav button:hover {
+  color: blanchedalmond;
+}
+#subComponent {
+  text-align: center;
+}
+
+#wholeTablePage {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+#button-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+#next-button{
+  padding: 0.5rem;
+  width: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(101, 238, 167);
+}
+#prev-button{
+  padding: 0.5rem;
+  width: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(101, 238, 167);
+}
+@media (max-width: 768px) {
+  #form {
+    padding: 1rem; 
+  }
+
+  #nav {
+    padding: 1rem;
+  }
+
+  #nav button {
+    font-size: 0.8rem; 
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  #form {
+    padding: 0.5rem; 
+  }
+
+  #nav {
+    padding: 0.5rem;
+  }
+
+  #nav button {
+    font-size: 0.7rem; 
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
+  #wholeTablePage {
+    align-items: stretch; 
+  }
+
+  #button-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem; 
+  }
+
+  #next-button,
+  #prev-button {
+    width: 100%; 
+    margin-bottom: 1rem; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  #button-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
